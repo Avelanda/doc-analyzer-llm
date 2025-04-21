@@ -48,7 +48,7 @@ import { useNavigate } from "react-router-dom";
 
 const TITLE = "LLM Preference";
 const DESCRIPTION =
-  "Digital Guide can work with many LLM providers. This will be the service which handles chatting.";
+  "Is'alni can work with many LLM providers. This will be the service which handles chatting.";
 
 const LLMS = [
   {
@@ -188,7 +188,7 @@ const LLMS = [
     logo: AnythingLLMIcon,
     options: (settings) => <NativeLLMOptions settings={settings} />,
     description:
-      "Use a downloaded custom Llama model for chatting on this Digital Guide instance.",
+      "Use a downloaded custom Llama model for chatting on this Is'alni instance.",
   },
 ];
 
@@ -231,7 +231,7 @@ export default function LLMPreference({
     const data = {};
     const formData = new FormData(form);
     data.LLMProvider = selectedLLM;
-    // Default to Digital Guide embedder and LanceDB
+    // Default to Is'alni embedder and LanceDB
     data.EmbeddingEngine = "native";
     data.VectorDB = "lancedb";
     for (var [key, value] of formData.entries()) data[key] = value;

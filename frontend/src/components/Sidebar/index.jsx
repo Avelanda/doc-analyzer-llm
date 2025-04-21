@@ -54,7 +54,7 @@ export default function Sidebar() {
             left: "25px",
           }}
         >
-          Digital Guide
+          Is'alni
         </div>
       </Link>
       <div

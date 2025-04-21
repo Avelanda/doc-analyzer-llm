@@ -1,4 +1,4 @@
-# How to setup Pinecone Vector Database for Digital Guide
+# How to setup Pinecone Vector Database for Is'alni
 
 [Official Pinecone Docs](https://docs.pinecone.io/docs/overview) for reference.
 
@@ -8,7 +8,7 @@
 
 - Pinecone account with index that allows namespaces.
 
-**Note:** [Namespaces are not supported in `gcp-starter` environments](https://docs.pinecone.io/docs/namespaces) and are required to work with Digital Guide.
+**Note:** [Namespaces are not supported in `gcp-starter` environments](https://docs.pinecone.io/docs/namespaces) and are required to work with Is'alni.
 
 **Instructions**
 

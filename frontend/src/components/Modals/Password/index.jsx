@@ -12,15 +12,16 @@ import illustration from "@/media/illustrations/login-illustration.png";
 
 export default function PasswordModal({ mode = "single" }) {
   const { loginLogo } = useLogo();
-  const logo = (
-    <img
-      src={loginLogo}
-      alt="Logo"
-      // className={`hidden relative md:flex w-fit m-4 z-30 relative max-h-[65px]  md:shadow-[0_4px_14px_rgba(0,0,0,0.25)]`}
-      className={`hidden relative md:flex w-fit z-30 relative max-h-[40px]`}
-      style={{ objectFit: "contain" }}
-    />
-  );
+  const logo = null;
+  // (
+    // <img
+    //   src={loginLogo}
+    //   alt="Logo"
+    //   // className={`hidden relative md:flex w-fit m-4 z-30 relative max-h-[65px]  md:shadow-[0_4px_14px_rgba(0,0,0,0.25)]`}
+    //   className={`hidden relative md:flex w-fit z-30 relative max-h-[40px]`}
+    //   style={{ objectFit: "contain" }}
+    // />
+  // );
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-full overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] h-full bg-[#f5f5f5] flex flex-col md:flex-row-reverse items-center justify-center">
@@ -55,7 +56,7 @@ export default function PasswordModal({ mode = "single" }) {
               fontWeight: 400, fontSize: "16px", lineHeight: "24px", marginTop: "16px"
             }}
           >
-            Digital Guide is an innovative AI-powered application designed to revolutionize the way you interact with books. With this cutting-edge tool, you can engage in dynamic conversations about your favorite literature, gain deeper insights, and enhance your reading experience like never before.
+            Is'alni is an innovative AI-powered application designed to revolutionize the way you interact with books. With this cutting-edge tool, you can engage in dynamic conversations about your favorite literature, gain deeper insights, and enhance your reading experience like never before.
           </div>
         </div>
       </div>

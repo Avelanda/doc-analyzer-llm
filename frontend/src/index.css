@@ -1335,3 +1335,15 @@ does not extend the close button beyond the viewport. */
 .whitespace-pre-line {
   white-space: normal;
 }
+
+.gradient-text {
+  font-size: 64px; /* Adjust as per the image (looks like ~64px) */
+  font-weight: 800; /* Extra bold like the image */
+  font-family: 'Segoe UI', sans-serif; /* Use same font family if known */
+
+  background: linear-gradient(to right, #1500ff, #3d9be9); /* Approximate colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin: 0;
+}

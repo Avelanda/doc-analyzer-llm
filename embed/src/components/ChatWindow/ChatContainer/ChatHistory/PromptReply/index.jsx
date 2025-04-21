@@ -14,7 +14,7 @@ const PromptReply = forwardRef(
         <div className={`flex items-start w-full h-fit justify-start`}>
           <img
             src={embedderSettings.settings.assistantIcon || AnythingLLMIcon}
-            alt="Digital Guide Icon"
+            alt="Is'alni Icon"
             className="w-9 h-9 flex-shrink-0 ml-2"
           />
           <div
@@ -34,7 +34,7 @@ const PromptReply = forwardRef(
         <div className={`flex items-end w-full h-fit justify-start`}>
           <img
             src={embedderSettings.settings.assistantIcon || AnythingLLMIcon}
-            alt="Digital Guide Icon"
+            alt="Is'alni Icon"
             className="w-9 h-9 flex-shrink-0 ml-2"
           />
           <div
@@ -61,7 +61,7 @@ const PromptReply = forwardRef(
           className={`text-[10px] font-medium text-gray-400 ml-[54px] mr-6 mb-2 text-left`}
         >
           {embedderSettings.settings.assistantName ||
-            "Digital Guide Chat Assistant"}
+            "Is'alni Chat Assistant"}
         </div>
         <div
           key={uuid}
@@ -70,7 +70,7 @@ const PromptReply = forwardRef(
         >
           <img
             src={embedderSettings.settings.assistantIcon || AnythingLLMIcon}
-            alt="Digital Guide Icon"
+            alt="Is'alni Icon"
             className="w-9 h-9 flex-shrink-0 ml-2"
           />
           <div

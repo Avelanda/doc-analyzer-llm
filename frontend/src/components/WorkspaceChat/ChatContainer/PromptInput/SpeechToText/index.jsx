@@ -23,7 +23,7 @@ export default function SpeechToText({ sendCommand }) {
   function startSTTSession() {
     if (!isMicrophoneAvailable) {
       alert(
-        "Digital Guide does not have access to microphone. Please enable for this site to use this feature."
+        "Is'alni does not have access to microphone. Please enable for this site to use this feature."
       );
       return;
     }
