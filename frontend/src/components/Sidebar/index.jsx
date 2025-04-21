@@ -51,7 +51,8 @@ export default function Sidebar() {
             color: "white",
             position: "relative",
             top: "12px",
-            left: "25px",
+            left: "18px",
+            fontSize: "23px",
           }}
         >
           Is'alni
