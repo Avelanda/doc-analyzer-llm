@@ -47,13 +47,13 @@ const RecoveryForm = ({ onSubmit, setShowRecoveryForm, logo }) => {
         className="flex items-start justify-between w-screen md:w-full"
         style={{ flexDirection: 'column', paddingTop: '32px', paddingBotttom: "16px" }}
       >
-        {/* <img src={AppNameLogo} alt="app_name" style={{ height: '41px', width: "fit-content", marginTop: '24px', marginBottom: "16px" }} /> */}
-        <div
+        <img src={AppNameLogo} alt="app_name" style={{ height: '41px', width: "fit-content", marginTop: '24px', marginBottom: "16px" }} />
+        {/* <div
           style={{ fontSize: "36px", width: "fit-content", marginTop: '24px' }}
           className="gradient-text"
         >
           Is’alni
-        </div>
+        </div> */}
         <div className="flex flex-col gap-y-4 w-full">
           <h3 className="text-4xl md:text-lg font-bold text-white text-center md:text-left">
             Password Reset
@@ -147,13 +147,13 @@ const ResetPasswordForm = ({ onSubmit, logo }) => {
       className="flex flex-col justify-center items-center relative rounded-2xl md:bg-login-gradient md:shadow-[0_4px_14px_rgba(0,0,0,0.25)] md:px-16 px-0 py-4 w-full md:w-fit -mt-24 md:-mt-28"
     >
       {logo}
-      {/* <img src={AppNameLogo} alt="app_name" style={{ height: '41px', width: "fit-content", marginTop: '24px' }} /> */}
-      <div
+      <img src={AppNameLogo} alt="app_name" style={{ height: '41px', width: "fit-content", marginTop: '24px' }} />
+      {/* <div
         style={{ fontSize: "36px", width: "fit-content", marginTop: '24px' }}
         className="gradient-text"
       >
         Is’alni
-      </div>
+      </div> */}
       <div className="flex items-start justify-between pt-11 pb-9 w-screen md:w-full md:px-12 px-6">
         <div className="flex flex-col gap-y-4 w-full">
           <h3 className="text-4xl md:text-2xl font-bold text-white text-center md:text-left">
@@ -333,13 +333,13 @@ export default function MultiUserAuth({ logo }) {
           className="flex flex-col justify-center relative rounded-2xl md:bg-login-gradient md:px-4 -mt-4 md:mt-0"
         >
           {logo}
-          {/* <img src={AppNameLogo} alt="app_name" style={{ height: '41px', width: "fit-content", marginTop: '24px' }} /> */}
-          <div
+          <img src={AppNameLogo} alt="app_name" style={{ height: '41px', width: "fit-content", marginTop: '24px', marginBottom: "4px" }} />
+          {/* <div
             style={{ fontSize: "36px", width: "fit-content", marginTop: '24px' }}
             className="gradient-text"
           >
             Is’alni
-          </div>
+          </div> */}
           <div
             // className="flex items-start justify-between pt-11 pb-9 rounded-t"
             className="flex items-start justify-between rounded-t"
