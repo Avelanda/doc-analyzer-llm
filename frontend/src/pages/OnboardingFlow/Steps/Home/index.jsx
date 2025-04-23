@@ -24,7 +24,7 @@ export default function OnboardingHome() {
             <p className="text-zinc-300 font-thin text-[24px]">Welcome to</p>
             <img
               src={AnythingLLMLogo}
-              alt="Is'alni"
+              alt="مجيب"
               className="md:h-[50px] flex-shrink-0 max-w-[300px]"
             />
             <button

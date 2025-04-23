@@ -4,9 +4,9 @@ import { CheckCircle } from "@phosphor-icons/react";
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-const TITLE = "Welcome to Is'alni";
+const TITLE = "Welcome to مجيب";
 const DESCRIPTION =
-  "Help us make Is'alni built for your needs. Optional.";
+  "Help us make مجيب built for your needs. Optional.";
 
 async function sendQuestionnaire({ email, useCase, comment }) {
   if (import.meta.env.DEV) {
@@ -132,7 +132,7 @@ export default function Survey({ setHeader, setForwardBtn, setBackBtn }) {
             className="text-white text-base font-medium"
             htmlFor="use_case"
           >
-            What will you use Is'alni for?{" "}
+            What will you use مجيب for?{" "}
           </label>
           <div className="mt-2 gap-y-3 flex flex-col">
             <label

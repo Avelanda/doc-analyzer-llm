@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
 
 <p align="center">
-  <a href="https://useanything.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="Is'alni logo"></a>
+  <a href="https://useanything.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="مجيب logo"></a>
 </p>
 
 <p align="center">
-    <b>Is'alni：</b> 您一直在寻找的全方位AI应用程序。<br />
+    <b>مجيب：</b> 您一直在寻找的全方位AI应用程序。<br />
     与您的文档聊天，使用AI代理，高度可配置，多用户，无需繁琐的设置。
 </p>
 

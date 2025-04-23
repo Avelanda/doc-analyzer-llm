@@ -34,12 +34,12 @@ import { useTranslation } from "react-i18next";
 
 const EMBEDDERS = [
   {
-    name: "Is'alni Embedder",
+    name: "مجيب Embedder",
     value: "native",
     logo: AnythingLLMIcon,
     options: (settings) => <NativeEmbeddingOptions settings={settings} />,
     description:
-      "Use the built-in embedding provider for Is'alni. Zero setup!",
+      "Use the built-in embedding provider for مجيب. Zero setup!",
   },
   {
     name: "OpenAI",

@@ -50,12 +50,12 @@ export default function Sidebar() {
           style={{
             color: "white",
             position: "relative",
-            top: "12px",
+            top: "9px",
             left: "18px",
             fontSize: "23px",
           }}
         >
-          Is'alni
+          مجيب
         </div>
       </Link>
       <div

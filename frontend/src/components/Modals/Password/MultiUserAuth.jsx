@@ -357,12 +357,12 @@ export default function MultiUserAuth({ logo }) {
                   // className="text-4xl md:text-2xl font-bold bg-gradient-to-r from-[#75D6FF] via-[#FFFFFF] to-[#FFFFFF] bg-clip-text text-transparent"
                   className="text-4xl md:text-2xl font-bold"
                 >
-                  {customAppName || "Is'alni"}
+                  {customAppName || "مجيب"}
                 </p> */}
               </div>
               <p className="text-sm text-white text-center">
                 Please provide your credentials to securely access your account.
-                {/* {t("login.sign-in.start")} {customAppName || "Is'alni"}{" "}
+                {/* {t("login.sign-in.start")} {customAppName || "مجيب"}{" "}
                 {t("login.sign-in.end")} */}
               </p>
             </div>

@@ -1,7 +1,7 @@
 const { WorkspaceChats } = require("../../../../models/workspaceChats");
 
 /**
- * Plugin to save chat history to Is'alni DB.
+ * Plugin to save chat history to مجيب DB.
  */
 const chatHistory = {
   name: "chat-history",

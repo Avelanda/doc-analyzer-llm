@@ -1,4 +1,4 @@
-# How to setup Astra Vector Database for Is'alni
+# How to setup Astra Vector Database for مجيب
 
 [Official Astra DB Docs](https://docs.datastax.com/en/astra/astra-db-vector/get-started/quickstart.html) for reference.
 

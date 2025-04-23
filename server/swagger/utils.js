@@ -15,7 +15,7 @@ function useSwagger(app) {
       fs.readFileSync(path.resolve(__dirname, 'index.css')),
       fs.readFileSync(path.resolve(__dirname, 'dark-swagger.css'))
     ].join('\n\n\n'),
-    customSiteTitle: `Is'alni Developer API Documentation`,
+    customSiteTitle: `مجيب Developer API Documentation`,
     customfavIcon: faviconUrl(),
   }
 

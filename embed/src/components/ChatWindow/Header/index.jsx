@@ -52,7 +52,7 @@ export default function ChatWindowHeader({
         <img
           style={{ maxWidth: 48, maxHeight: 48 }}
           src={iconUrl ?? AnythingLLMIcon}
-          alt={iconUrl ? "Brand" : "Is'alni Logo"}
+          alt={iconUrl ? "Brand" : "مجيب Logo"}
         />
       </div>
       <div className="absolute right-0 flex gap-x-1 items-center px-[22px]">

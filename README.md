@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <p align="center">
-  <a href="https://useanything.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="Is'alni logo"></a>
+  <a href="https://useanything.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="مجيب logo"></a>
 </p>
 
 <div align='center'>
@@ -9,7 +9,7 @@
 </div>
 
 <p align="center">
-    <b>Is'alni:</b> The all-in-one AI app you were looking for.<br />
+    <b>مجيب:</b> The all-in-one AI app you were looking for.<br />
     Chat with your docs, use AI Agents, hyper-configurable, multi-user, & no frustrating set up required.
 </p>
 
@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-👉 Is'alni for desktop (Mac, Windows, & Linux)! <a href="https://useanything.com/download" target="_blank"> Download Now</a>
+👉 مجيب for desktop (Mac, Windows, & Linux)! <a href="https://useanything.com/download" target="_blank"> Download Now</a>
 </p>
 
 A full-stack application that enables you to turn any document, resource, or piece of content into context that any LLM can use as references during chatting. This application allows you to pick and choose which LLM or Vector Database you want to use as well as supporting multi-user management and permissions.
@@ -49,11 +49,11 @@ A full-stack application that enables you to turn any document, resource, or pie
 
 ### Product Overview
 
-Is'alni is a full-stack application where you can use commercial off-the-shelf LLMs or popular open source LLMs and vectorDB solutions to build a private ChatGPT with no compromises that you can run locally as well as host remotely and be able to chat intelligently with any documents you provide it.
+مجيب is a full-stack application where you can use commercial off-the-shelf LLMs or popular open source LLMs and vectorDB solutions to build a private ChatGPT with no compromises that you can run locally as well as host remotely and be able to chat intelligently with any documents you provide it.
 
-Is'alni divides your documents into objects called `workspaces`. A Workspace functions a lot like a thread, but with the addition of containerization of your documents. Workspaces can share documents, but they do not talk to each other so you can keep your context for each workspace clean.
+مجيب divides your documents into objects called `workspaces`. A Workspace functions a lot like a thread, but with the addition of containerization of your documents. Workspaces can share documents, but they do not talk to each other so you can keep your context for each workspace clean.
 
-Some cool features of Is'alni
+Some cool features of مجيب
 
 - **Multi-user instance support and permissioning**
 - Agents inside your workspace (browse the web, run code, etc)
@@ -93,7 +93,7 @@ Some cool features of Is'alni
 
 **Embedder models:**
 
-- [Is'alni Native Embedder](/server/storage/models/README.md) (default)
+- [مجيب Native Embedder](/server/storage/models/README.md) (default)
 - [OpenAI](https://openai.com)
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 - [LocalAi (all)](https://localai.io/)
@@ -103,7 +103,7 @@ Some cool features of Is'alni
 
 **Audio Transcription models:**
 
-- [Is'alni Built-in](https://github.com/Mintplex-Labs/anything-llm/tree/master/server/storage/models#audiovideo-transcription) (default)
+- [مجيب Built-in](https://github.com/Mintplex-Labs/anything-llm/tree/master/server/storage/models#audiovideo-transcription) (default)
 - [OpenAI](https://openai.com/)
 
 **TTS (text-to-speech) support:**
@@ -139,7 +139,7 @@ This monorepo consists of three main sections:
 
 ## 🛳 Self Hosting
 
-Mintplex Labs & the community maintain a number of deployment methods, scripts, and templates that you can use to run Is'alni locally. Refer to the table below to read how to deploy on your preferred environment or to automatically deploy.
+Mintplex Labs & the community maintain a number of deployment methods, scripts, and templates that you can use to run مجيب locally. Refer to the table below to read how to deploy on your preferred environment or to automatically deploy.
 | Docker | AWS | GCP | Digital Ocean | Render.com |
 |----------------------------------------|----:|-----|---------------|------------|
 | [![Deploy on Docker][docker-btn]][docker-deploy] | [![Deploy on AWS][aws-btn]][aws-deploy] | [![Deploy on GCP][gcp-btn]][gcp-deploy] | [![Deploy on DigitalOcean][do-btn]][do-deploy] | [![Deploy on Render.com][render-btn]][render-deploy] |
@@ -148,7 +148,7 @@ Mintplex Labs & the community maintain a number of deployment methods, scripts, 
 | --- | --- |
 | [![Deploy on Railway][railway-btn]][railway-deploy] | [![Deploy on RepoCloud][repocloud-btn]][repocloud-deploy] |
 
-[or set up a production Is'alni instance without Docker →](./BARE_METAL.md)
+[or set up a production مجيب instance without Docker →](./BARE_METAL.md)
 
 ## How to setup for development
 
@@ -170,14 +170,14 @@ Mintplex Labs & the community maintain a number of deployment methods, scripts, 
 
 ## Telemetry & Privacy
 
-Is'alni by Mintplex Labs Inc contains a telemetry feature that collects anonymous usage information.
+مجيب by Mintplex Labs Inc contains a telemetry feature that collects anonymous usage information.
 
 <details>
-<summary><kbd>More about Telemetry & Privacy for Is'alni</kbd></summary>
+<summary><kbd>More about Telemetry & Privacy for مجيب</kbd></summary>
 
 ### Why?
 
-We use this information to help us understand how Is'alni is used, to help us prioritize work on new features and bug fixes, and to help us improve Is'alni's performance and stability.
+We use this information to help us understand how مجيب is used, to help us prioritize work on new features and bug fixes, and to help us improve مجيب's performance and stability.
 
 ### Opting out
 
