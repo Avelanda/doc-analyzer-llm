@@ -95,6 +95,8 @@ class GenericOpenAiLLM {
         messages,
         temperature,
         max_tokens: this.maxTokens,
+        guided_regex:
+          "[؀-ۿA-Za-z0-9٠-٩!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>/?؟،`~\\s]+",
       })
       .catch((e) => {
         throw new Error(e.message);
@@ -112,6 +114,8 @@ class GenericOpenAiLLM {
       messages,
       temperature,
       max_tokens: this.maxTokens,
+      guided_regex:
+        "[؀-ۿA-Za-z0-9٠-٩!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>/?؟،`~\\s]+",
     });
     return streamRequest;
   }
