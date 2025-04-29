@@ -88,7 +88,7 @@ class GenericOpenAiLLM {
     return { safe: true, reasons: [] };
   }
 
-  async getChatCompletion(messages = null, { temperature = 0.7 }) {
+  async getChatCompletion(messages = null, { temperature = process.env.GENERIC_OPEN_AI_TEMP || 0.7 }) {
     const result = await this.openai.chat.completions
       .create({
         model: this.model,
@@ -107,7 +107,7 @@ class GenericOpenAiLLM {
     return result.choices[0].message.content;
   }
 
-  async streamGetChatCompletion(messages = null, { temperature = 0.7 }) {
+  async streamGetChatCompletion(messages = null, { temperature = process.env.GENERIC_OPEN_AI_TEMP || 0.7 }) {
     const streamRequest = await this.openai.chat.completions.create({
       model: this.model,
       stream: true,
