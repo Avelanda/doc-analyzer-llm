@@ -64,9 +64,10 @@ const Actions = ({
             />
           </>
         )}
+        <TTSMessage slug={slug} chatId={chatId} message={message} />
       </div>
       <div className="flex" style={{ alignItems: "center", columnGap: "12px" }}>
-        <TTSMessage slug={slug} chatId={chatId} message={message} />
+        {/* <TTSMessage slug={slug} chatId={chatId} message={message} /> */}
         {isSaveToNotes && role === "assistant" && (
           <div
             style={{

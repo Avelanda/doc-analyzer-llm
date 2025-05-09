@@ -36,7 +36,7 @@ function combineLikeSources(sources) {
   return Object.values(combined);
 }
 
-export default function Citations({ sources = [] }) {
+export default function Citations({ sources = [], isDirectionRtl = false }) {
   if (sources.length === 0) return null;
   const [open, setOpen] = useState(false);
   const [selectedSource, setSelectedSource] = useState(null);
@@ -45,9 +45,9 @@ export default function Citations({ sources = [] }) {
     <div className="flex flex-col mt-4 justify-left">
       <button
         onClick={() => setOpen(!open)}
-        className={`text-white/50 font-medium italic text-sm text-left ml-14 pt-2 ${
+        className={`text-white/50 font-medium italic text-sm text-left ${isDirectionRtl ? 'mr-14' : 'ml-14'} pt-2 ${
           open ? "pb-2" : ""
-        } transition-all duration-300`}
+        } transition-all duration-300 ${isDirectionRtl ? 'flex flex-row-reverse items-center' : ''}`}
       >
         {open ? "Hide Citations" : "Show Citations"}
         <CaretRight
@@ -57,7 +57,9 @@ export default function Citations({ sources = [] }) {
         />
       </button>
       {open && (
-        <div className="flex flex-wrap md:flex-row flex-col md:items-center gap-4 overflow-x-scroll mt-1 doc__source">
+        <div className={`flex flex-wrap md:flex-row flex-col md:items-center gap-4 overflow-x-scroll mt-1 ${isDirectionRtl ? 'doc__source_rtl' : 'doc__source'}`}
+        style={isDirectionRtl ? {flexDirection: 'row-reverse'} : {}}
+        >
           {combineLikeSources(sources).map((source) => (
             <Citation
               key={v4()}

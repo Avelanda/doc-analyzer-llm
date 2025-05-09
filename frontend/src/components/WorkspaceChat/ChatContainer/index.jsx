@@ -561,8 +561,10 @@ function getQuestions(questionsString, num = 5) {
 
 function StyleGuide({ sendMessage, workspace }) {
   const [summary, setSummary] = useState("");
+  const [summaryError, setSummaryError] = useState(false)
   const summaryRef = useRef("");
   const [questions, setQuestions] = useState([]);
+  const [questionsError, setQuestionError] =  useState(false)
   const questionsRef = useRef("");
 
   useEffect(() => {
@@ -571,6 +573,7 @@ function StyleGuide({ sendMessage, workspace }) {
       { ...workspace, chatMode: "query" },
       `Provide an overview from the uploaded documents in less than 150 words. Find meta details: ${documents}`,
       (chatResult) => {
+        setSummaryError(false)
         if (chatResult?.type === "textResponseChunk") {
           summaryRef.current += chatResult?.textResponse;
         } else if (chatResult?.type === "finalizeResponseStream") {
@@ -578,6 +581,7 @@ function StyleGuide({ sendMessage, workspace }) {
           summaryRef.current = "";
           System.deleteChat(chatResult?.chatId);
         } else if (chatResult?.type === "abort") {
+          setSummaryError(true)
           setSummary(summaryRef.current);
           summaryRef.current = "";
           // System.deleteChat(chatResult?.chatId);
@@ -592,6 +596,7 @@ function StyleGuide({ sendMessage, workspace }) {
       { ...workspace },
       `Suggest questions from the uploaded documents. Find meta details: ${documents}`,
       (chatResult) => {
+        setQuestionError(false)
         if (chatResult?.type === "textResponseChunk") {
           questionsRef.current += chatResult?.textResponse;
         } else if (chatResult?.type === "finalizeResponseStream") {
@@ -603,6 +608,7 @@ function StyleGuide({ sendMessage, workspace }) {
           questionsRef.current = "";
           setQuestions(cleanedQuestions);
         } else if (chatResult?.type === "abort") {
+          setQuestionError(true)
           setQuestions([]);
           questionsRef.current = "";
           // System.deleteChat(chatResult?.chatId);
@@ -654,9 +660,22 @@ function StyleGuide({ sendMessage, workspace }) {
               Summary
             </div>
             <div>
-              {!summary ? (
+              {!summary && !summaryError ? (
                 <Skeleton count={4} />
-              ) : (
+              ) :
+              summaryError ? ( 
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '100%',
+                    paddingInline: "8px",
+                    minHeight: '100px'
+                  }}>
+                    No summary present!
+                  </div>
+              ) :
+              (
                 <Scrollbars
                   style={{
                     maxHeight: "250px",
@@ -802,9 +821,21 @@ function StyleGuide({ sendMessage, workspace }) {
                 rowGap: "16px",
               }}
             >
-              {!questions?.length ? (
+              {!questions?.length && !questionsError ? (
                 <Skeleton count={4} />
-              ) : (
+              ) : questionsError ? (
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  height: '100%',
+                  paddingInline: "8px",
+                  minHeight: '100px'
+                }}>
+                  No questions present!
+                </div>
+              ) 
+              : (
                 questions?.map((q, index) => (
                   <div
                     key={index}
