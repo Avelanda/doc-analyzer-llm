@@ -658,6 +658,12 @@ button.bg-dark-input {
   animation: message2 0.15s ease-out 0s forwards;
   animation-delay: 50ms;
 }
+.doc__source_rtl {
+  transform-origin: 100% 100%;
+  transform: scale(0);
+  animation: message2 0.15s ease-out 0s forwards;
+  animation-delay: 50ms;
+}
 
 @keyframes message2 {
   0% {

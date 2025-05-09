@@ -24,6 +24,7 @@ export default function UserIcon({ size = 36, user, role, logo }) {
         justifyContent: "center",
         alignItems: "center",
         display: "flex",
+        ...(role === "user") && {border: '1px solid #ccc'}
       }}
     >
       {((logo && !pfp) || (logo && role !== "user")) ? (

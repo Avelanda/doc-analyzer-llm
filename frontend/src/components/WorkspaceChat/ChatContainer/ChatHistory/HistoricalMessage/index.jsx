@@ -7,7 +7,7 @@ import AssistantLogo from "@/media/logo/assistant.png";
 import UserLogo from "@/media/logo/user.png";
 import { userFromStorage } from "@/utils/request";
 import Citations from "../Citation";
-import { AI_BACKGROUND_COLOR, USER_BACKGROUND_COLOR } from "@/utils/constants";
+import { AI_BACKGROUND_COLOR, isArabic, USER_BACKGROUND_COLOR } from "@/utils/constants";
 import { v4 } from "uuid";
 import createDOMPurify from "dompurify";
 import { EditMessageForm, useEditMessage } from "./Actions/EditMessage";
@@ -64,6 +64,8 @@ const HistoricalMessage = ({
     );
   }
 
+  const isDirectionRtl = isArabic(message) && role === 'assistant'
+
   return (
     <div
       style={{
@@ -83,7 +85,7 @@ const HistoricalMessage = ({
         <div
           className={`${role !== "user" ? "py-4 px-4" : ""} w-full flex gap-x-5 md:max-w-[100%] flex-col`}
         >
-          <div className="flex gap-x-5">
+          <div className={'flex gap-x-5'} style={isDirectionRtl ? {direction: 'rtl'} : {}}>
             <ProfileImage role={role} workspace={workspace} />
             {isEditing ? (
               <EditMessageForm
@@ -102,7 +104,7 @@ const HistoricalMessage = ({
               />
             )}
           </div>
-          <div className="flex gap-x-5">
+          <div className="flex gap-x-5" style={isDirectionRtl ? {direction: 'rtl'} : {}}>
             <div className="relative w-[35px] h-[35px] rounded-full flex-shrink-0 overflow-hidden" />
             <Actions
               message={message}
@@ -120,7 +122,7 @@ const HistoricalMessage = ({
               role={role}
             />
           </div>
-          {role === "assistant" && <Citations sources={sources} />}
+          {role === "assistant" && <Citations sources={sources} isDirectionRtl={isDirectionRtl} />}
         </div>
       </div>
     </div>
