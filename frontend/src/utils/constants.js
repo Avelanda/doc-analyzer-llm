@@ -13,3 +13,8 @@ export function fullApiUrl() {
   if (API_BASE !== "/api") return API_BASE;
   return `${window.location.origin}/api`;
 }
+
+export const isArabic = (text) => {
+  const arabicRegex = /[\u0600-\u06FF]/;
+  return arabicRegex.test(text);
+}
