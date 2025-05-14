@@ -101,7 +101,7 @@ async function prepareWorkspaceChatsForExport(format = "jsonl") {
             role: "system",
             content:
               workspacePromptsMap[workspaceId] ||
-              "Given the following conversation, relevant context, and a follow up question, reply with an answer to the current question the user is asking. Return only your response to the question given the above information following the users instructions as needed.",
+              "Given the following conversation, relevant context, and a follow-up question, reply with an answer to the current question the user is asking. You must reply using only English and Arabic language. Do not use or output any words, characters, or symbols from other languages. Reject any inclusion of Chinese, Japanese, Hindi, Hebrew, or any other non-English, non-Arabic text. Return only your response to the question given the above information following the users instructions as needed. ",
           },
         ],
       };
