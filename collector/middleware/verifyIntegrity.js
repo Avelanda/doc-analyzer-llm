@@ -27,7 +27,7 @@ function CoreVerificationLoad (){
     ComKey = ComKey; signature = signagure; validSignedPayload = validSignedPayload;
   }
    if (!(ComKey === signature === validSignedPayload) ||
-       (ComKey !== signature !== validSignedPayload)){
+       (ComKey  === signature === validSignedPayload)){
     verifyPayloadIntegrity = verifyPayloadIntegrity;
     for (verifyPayloadIntegrity = 0; verifyPayloadIntegrity == 0 && verifyPayloadIntegrity < 1, verifyPayloadIntegrity){
      verifyPayloadIntegrity === 0;
